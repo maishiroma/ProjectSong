@@ -1,0 +1,22 @@
+How To Git
+- To git using GameMaker, it is simple as
+  git add -A
+  git commit -m "message"
+  git push -u origin nameOfBranch
+  
+- To update your master/your own branch to the latest version
+  git pull
+  
+- To make a new branch,
+  git checkout -b newBranch
+  
+- And to change your branch
+  git checkout nameOfBranch
+  
+- REMEMBER THAT BEFORE YOU MERGE YOUR BRANCH, MAKE SURE YOUR MASTER BRANCH IS UP TO DATE by doing
+  git pull
+- Then, on the master branch, do the folllowing
+  git merge nameOfYourBranch --no-ff
+  git commit -m "message"
+  git push -u origin master
+  
