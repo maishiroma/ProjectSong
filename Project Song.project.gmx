@@ -6,7 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\PlayerDummy</sprite>
+    <sprite>sprites\Player_Move</sprite>
     <sprite>sprites\DummyGround</sprite>
   </sprites>
   <backgrounds name="background"/>
@@ -15,6 +15,9 @@
     <object>objects\Player</object>
     <object>objects\Ground</object>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\TestRoom</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
