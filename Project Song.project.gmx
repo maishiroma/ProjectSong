@@ -8,12 +8,14 @@
   <sprites name="sprites">
     <sprite>sprites\Player_Move</sprite>
     <sprite>sprites\DummyGround</sprite>
+    <sprite>sprites\AttackWave</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\Player</object>
     <object>objects\Ground</object>
+    <object>objects\SoundWave</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TestRoom</room>
