@@ -9,6 +9,11 @@
     <sprite>sprites\Player_Move</sprite>
     <sprite>sprites\DummyGround</sprite>
     <sprite>sprites\AttackWave</sprite>
+    <sprite>sprites\Player_Idle</sprite>
+    <sprite>sprites\Player_AttackIdle</sprite>
+    <sprite>sprites\Player_AttackMove</sprite>
+    <sprite>sprites\Player_Jump</sprite>
+    <sprite>sprites\Player_JumpAttack</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
