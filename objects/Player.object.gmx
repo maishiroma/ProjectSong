@@ -27,13 +27,41 @@
             <kind>1</kind>
             <string>/// Variables for the player
 
-moveSpeed = 5;              // How fast does the player move?
-jumpSpeed = 5;              // How high does the player jump? Also controls fall speed
+moveSpeed = 7;              // How fast does the player move?
+jumpSpeed = 10;             // How high does the player jump? Also controls fall speed
 isGrounded = true;          // Is the player currently grounded?
 moveDirection = "east"      // What direction is the player facing
 
 unlockedShooting = true;    // Did the player unlock the ability to shoot waves?
 soundWaveType = 0;          // Type of Wave: 0 = rock; 1 = electro; 2 = wind
+
+isDisplayingAttack = false; // Is the sprite currently set in displaying attacks?
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Allows the sprite to return to non attack display, depending on curr action
+isDisplayingAttack = false;
 </string>
           </argument>
         </arguments>
@@ -81,7 +109,7 @@ vspeed = jumpSpeed;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Basic movement for the player
+            <string>/// Player Movement
 
 // This part deals with moving left and right, while checking if they can move to that spot.
 if(keyboard_check(vk_right) &amp;&amp; place_meeting(x+moveSpeed,y,Ground) == false)
@@ -90,7 +118,7 @@ if(keyboard_check(vk_right) &amp;&amp; place_meeting(x+moveSpeed,y,Ground) == fa
     hspeed = moveSpeed;
     image_xscale = 3;
     moveDirection = "east";
-    sprite_index = Player_Move;
+    
 }
 else if(keyboard_check(vk_left) &amp;&amp; place_meeting(x-moveSpeed,y,Ground) == false)
 {
@@ -98,13 +126,11 @@ else if(keyboard_check(vk_left) &amp;&amp; place_meeting(x-moveSpeed,y,Ground) =
     hspeed = -moveSpeed;
     image_xscale = -3;
     moveDirection = "west";
-    sprite_index = Player_Move;
 }
 else
 {
     image_speed = 0.15;
     hspeed = 0;
-    sprite_index = Player_Idle;
 }
 
 // This part checks if there's ground collision with the player.
@@ -115,7 +141,7 @@ if(isGrounded == true)
     {
         vspeed = -jumpSpeed;
         isGrounded = false;
-        alarm[0] = room_speed * 0.5;
+        alarm[0] = room_speed * 0.4;
     }
     // If the player doesn't have any solid ground below them, they'll fall
     else if(place_meeting(x,y+jumpSpeed,Ground) == false)
@@ -137,6 +163,50 @@ else
     {
         vspeed = jumpSpeed;
         alarm_set(0,-1);
+    }
+}
+
+// This part handles sprite changing, depending on what the player is doing
+if(isDisplayingAttack == false)
+{
+    if(isGrounded == true)
+    {
+        if(hspeed != 0)
+        {
+            // If the player is moving and attacking
+            if(keyboard_check_pressed(ord("Z")))
+            {
+                sprite_index = Player_AttackMove;
+                isDisplayingAttack = true;
+                alarm[1] = room_speed * 0.1;
+            }
+            else
+                sprite_index = Player_Move;
+        }
+        else
+        {
+            // If the player is standing still and attacking
+            if(keyboard_check_pressed(ord("Z")))
+            {
+                sprite_index = Player_AttackIdle;
+                isDisplayingAttack = true;
+                alarm[1] = room_speed * 0.1;
+            }
+            else
+                sprite_index = Player_Idle;
+        }
+    }
+    else
+    {
+         // If the player is in midair and attacking
+         if(keyboard_check_pressed(ord("Z")))
+         {
+            sprite_index = Player_JumpAttack;
+            isDisplayingAttack = true;
+            alarm[1] = room_speed * 0.1;  
+         }
+         else
+            sprite_index = Player_Jump;
     }
 }
 </string>
@@ -164,16 +234,58 @@ else
             <string>/// Shoots out sound wave
 if(unlockedShooting == true)
 { 
-    
     var soundWave;    
-
     if(moveDirection == "east")
-        soundWave = instance_create(x+moveSpeed+10,y+15,SoundWave);
+        soundWave = instance_create(x+moveSpeed+15,y+15,SoundWave);
     else if(moveDirection == "west")
-        soundWave = instance_create(x-moveSpeed-10,y+15,SoundWave);
+        soundWave = instance_create(x-moveSpeed-15,y+15,SoundWave);
         
     soundWave.moveDirection = moveDirection;
     soundWave.waveType = soundWaveType;
+    
+    switch(soundWaveType)
+    {
+        case 0:
+            soundWave.sprite_index = Rock_Wave_Sprite;
+            break;
+        case 1:
+            soundWave.sprite_index = Electro_Wave_Sprite;
+            break;
+        case 2:
+            soundWave.sprite_index = Wind_Wave_Sprite;
+            break;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="16">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Changes the type of SoundWave you have.
+
+if(unlockedShooting == true)
+{
+    if(soundWaveType == 2)
+        soundWaveType = 0;
+    else
+        soundWaveType++;
 }
 </string>
           </argument>
