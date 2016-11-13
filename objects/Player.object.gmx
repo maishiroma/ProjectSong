@@ -33,6 +33,8 @@ isGrounded = true;          // Is the player currently grounded?
 moveDirection = "east"      // What direction is the player facing
 
 unlockedShooting = true;    // Did the player unlock the ability to shoot waves?
+unlockElectroWave = true;   // Did the player unlock the ability to shoot electro waves?
+unlockWindWave = false;      // Did the player unlock the ability to shoot wind waves?
 soundWaveType = 0;          // Type of Wave: 0 = rock; 1 = electro; 2 = wind
 
 isDisplayingAttack = false; // Is the sprite currently set in displaying attacks?
@@ -282,10 +284,22 @@ if(unlockedShooting == true)
 
 if(unlockedShooting == true)
 {
-    if(soundWaveType == 2)
-        soundWaveType = 0;
+    if(unlockWindWave == true &amp;&amp; unlockElectroWave == true)
+    {
+        if(soundWaveType == 2)
+            soundWaveType = 0;
+        else
+            soundWaveType++;
+    }
+    else if(unlockElectroWave == true)
+    {
+        if(soundWaveType == 1)
+            soundWaveType = 0;
+        else
+            soundWaveType++;
+    }
     else
-        soundWaveType++;
+        soundWaveType = 0;
 }
 </string>
           </argument>
