@@ -16,6 +16,9 @@
     <sprite>sprites\Electro_Wave_Sprite</sprite>
     <sprite>sprites\Wind_Wave_Sprite</sprite>
     <sprite>sprites\Ground_Sprite</sprite>
+    <sprite>sprites\CowBell_Sprite</sprite>
+    <sprite>sprites\HiHat_Sprite</sprite>
+    <sprite>sprites\BreakableWall_DSprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -23,6 +26,10 @@
     <object>objects\Player</object>
     <object>objects\Ground</object>
     <object>objects\SoundWave</object>
+    <object>objects\BreakableWall</object>
+    <object>objects\Enemy</object>
+    <object>objects\CowBell</object>
+    <object>objects\HitHat</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TestRoom</room>
