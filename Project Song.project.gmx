@@ -51,9 +51,9 @@
     <object>objects\obj_Maraca</object>
     <object>objects\title_obj</object>
     <object>objects\start_obj</object>
-    <object>objects\retry_obj</object>
     <object>objects\quit_obj</object>
     <object>objects\help_obj</object>
+    <object>objects\retry_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\MenuRoom</room>
