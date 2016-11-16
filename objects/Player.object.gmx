@@ -34,7 +34,7 @@ moveDirection = "east"      // What direction is the player facing
 
 unlockedShooting = true;    // Did the player unlock the ability to shoot waves?
 unlockElectroWave = true;   // Did the player unlock the ability to shoot electro waves?
-unlockWindWave = false;      // Did the player unlock the ability to shoot wind waves?
+unlockWindWave = true;      // Did the player unlock the ability to shoot wind waves?
 soundWaveType = 0;          // Type of Wave: 0 = rock; 1 = electro; 2 = wind
 
 isDisplayingAttack = false; // Is the sprite currently set in displaying attacks?

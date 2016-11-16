@@ -27,13 +27,46 @@
             <kind>1</kind>
             <string>/// Basic enemy variables
 
-moveSpeed = 5;          // How fast does this enemy move?
-jumpSpeed = 5           // How fast does this enemy fall/jump if it can?
+horizSpeed = 5;          // How fast does this enemy move?
+vertiSpeed = 5           // How fast does this enemy fall/jump if it can?
+changeDirectionTime = 5; // How much time does it take for the enemey to turn around?
 
 rockWaveImmune = false;     // Is this enemy immune to the rock wave?
 isStunned = false;          // Is this enemy stunned from a rock wave?
+moveReverse = false;        // Is the enemy moving in the opposite direction?
 
 image_speed = 0.3;
+alarm[1] = room_speed * changeDirectionTime;    // Intitalizes the time to change direction
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Changes the moveReverse automatically, even if the enemy didn't hit a wall.
+
+if(moveReverse == false)
+    moveReverse = true;
+else
+    moveReverse = true;
+
+alarm[1] = room_speed * changeDirectionTime;
 </string>
           </argument>
         </arguments>

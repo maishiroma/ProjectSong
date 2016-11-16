@@ -29,6 +29,7 @@
     <object>objects\BreakableWall</object>
     <object>objects\Enemy</object>
     <object>objects\CowBell</object>
+    <object>objects\HitHat</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TestRoom</room>
