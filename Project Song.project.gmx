@@ -19,8 +19,25 @@
     <sprite>sprites\CowBell_Sprite</sprite>
     <sprite>sprites\HiHat_Sprite</sprite>
     <sprite>sprites\BreakableWall_DSprite</sprite>
+    <sprite>sprites\Sousaphone</sprite>
+    <sprite>sprites\Maraca_sprite</sprite>
+    <sprite>sprites\Title_Sprite</sprite>
+    <sprite>sprites\retry_sprite</sprite>
+    <sprite>sprites\quit_sprite</sprite>
+    <sprite>sprites\start_sprite</sprite>
+    <sprite>sprites\help_sprite</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\Day1</background>
+    <background>background\Day2</background>
+    <background>background\Night1</background>
+    <background>background\Night2</background>
+    <background>background\Dark1</background>
+    <background>background\Dark2</background>
+    <background>background\Sunset1</background>
+    <background>background\Sunset2</background>
+    <background>background\Menu</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\Player</object>
@@ -30,8 +47,16 @@
     <object>objects\Enemy</object>
     <object>objects\CowBell</object>
     <object>objects\HitHat</object>
+    <object>objects\obj_Sousaphone</object>
+    <object>objects\obj_Maraca</object>
+    <object>objects\title_obj</object>
+    <object>objects\start_obj</object>
+    <object>objects\retry_obj</object>
+    <object>objects\quit_obj</object>
+    <object>objects\help_obj</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\MenuRoom</room>
     <room>rooms\TestRoom</room>
   </rooms>
   <help>

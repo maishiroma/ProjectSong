@@ -35,7 +35,7 @@ rockWaveImmune = false;     // Is this enemy immune to the rock wave?
 isStunned = false;          // Is this enemy stunned from a rock wave?
 moveReverse = false;        // Is the enemy moving in the opposite direction?
 
-image_speed = 0.3;
+image_speed = 0.2;
 alarm[1] = room_speed * changeDirectionTime;    // Intitalizes the time to change direction
 </string>
           </argument>
