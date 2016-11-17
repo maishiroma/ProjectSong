@@ -114,7 +114,7 @@ vspeed = jumpSpeed;
             <string>/// Player Movement
 
 // This part deals with moving left and right, while checking if they can move to that spot.
-if(keyboard_check(vk_right) &amp;&amp; place_meeting(x+moveSpeed,y,Ground) == false)
+if(keyboard_check(vk_right) &amp;&amp; place_meeting(x+moveSpeed,y,Terrain_obj) == false)
 {
     image_speed = 0.3;
     hspeed = moveSpeed;
@@ -122,7 +122,7 @@ if(keyboard_check(vk_right) &amp;&amp; place_meeting(x+moveSpeed,y,Ground) == fa
     moveDirection = "east";
     
 }
-else if(keyboard_check(vk_left) &amp;&amp; place_meeting(x-moveSpeed,y,Ground) == false)
+else if(keyboard_check(vk_left) &amp;&amp; place_meeting(x-moveSpeed,y,Terrain_obj) == false)
 {
     image_speed = 0.3;
     hspeed = -moveSpeed;
@@ -146,7 +146,7 @@ if(isGrounded == true)
         alarm[0] = room_speed * 0.4;
     }
     // If the player doesn't have any solid ground below them, they'll fall
-    else if(place_meeting(x,y+jumpSpeed,Ground) == false)
+    else if(place_meeting(x,y+jumpSpeed,Terrain_obj) == false)
     {
         vspeed = jumpSpeed;
         isGrounded = false;
@@ -155,13 +155,13 @@ if(isGrounded == true)
 else
 {
     // If the player has landed on the ground
-    if(place_meeting(x,y+jumpSpeed,Ground) == true)
+    if(place_meeting(x,y+jumpSpeed,Terrain_obj) == true)
     {
         vspeed = 0;
         isGrounded = true;
     }
     // If the player's head touched the roof
-    else if(place_meeting(x,y-jumpSpeed,Ground) == true)
+    else if(place_meeting(x,y-jumpSpeed,Terrain_obj) == true)
     {
         vspeed = jumpSpeed;
         alarm_set(0,-1);
@@ -238,9 +238,9 @@ if(unlockedShooting == true)
 { 
     var soundWave;    
     if(moveDirection == "east")
-        soundWave = instance_create(x+moveSpeed+15,y+15,SoundWave);
+        soundWave = instance_create(x+moveSpeed+15,y+15,SoundWave_obj);
     else if(moveDirection == "west")
-        soundWave = instance_create(x-moveSpeed-15,y+15,SoundWave);
+        soundWave = instance_create(x-moveSpeed-15,y+15,SoundWave_obj);
         
     soundWave.moveDirection = moveDirection;
     soundWave.waveType = soundWaveType;
