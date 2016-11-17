@@ -28,6 +28,7 @@
     <sprite>sprites\help_sprite</sprite>
     <sprite>sprites\Switch_DS_sprite</sprite>
     <sprite>sprites\ElectroDoor_DS_sprite</sprite>
+    <sprite>sprites\ElectroPlatform_DS_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Day1</background>
@@ -44,9 +45,10 @@
   <objects name="objects">
     <object>objects\Player_obj</object>
     <object>objects\Terrain_obj</object>
+    <object>objects\MovingTerrain_obj</object>
+    <object>objects\Enemy_obj</object>
     <object>objects\SoundWave_obj</object>
     <object>objects\BreakableWall_obj</object>
-    <object>objects\Enemy_obj</object>
     <object>objects\CowBell_obj</object>
     <object>objects\HitHat_obj</object>
     <object>objects\Sousaphone_obj</object>
@@ -59,6 +61,7 @@
     <object>objects\Ground_obj</object>
     <object>objects\Switch_obj</object>
     <object>objects\ElectroDoor_obj</object>
+    <object>objects\ElectroPlatform_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TestRoom2</room>

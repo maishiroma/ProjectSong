@@ -55,7 +55,7 @@
     <instance objName="BreakableWall_obj" x="32" y="576" name="inst_C04306D3" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="BreakableWall_obj" x="32" y="640" name="inst_EF9FFBCB" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="CowBell_obj" x="864" y="480" name="inst_056541E0" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="HitHat_obj" x="512" y="704" name="inst_83B91EDF" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="HitHat_obj" x="512" y="672" name="inst_83B91EDF" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Sousaphone_obj" x="384" y="640" name="inst_00612AE8" locked="0" code="" scaleX="2.5" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="Maraca_obj" x="448" y="320" name="inst_329860AA" locked="0" code="" scaleX="2.5" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="512" y="736" name="inst_BF80D094" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>

@@ -35,7 +35,7 @@ if(isStunned == false)
 {
     if(moveReverse == false)
     {
-        if(position_meeting(x+horizSpeed,y,Terrain_obj) == true)
+        if(place_meeting(x+horizSpeed,y,Terrain_obj) == true)
         {
             moveReverse = true;
             alarm[1] = room_speed * changeDirectionTime;
@@ -45,7 +45,7 @@ if(isStunned == false)
     }
     else
     {
-        if(position_meeting(x-horizSpeed,y,Terrain_obj) == true)
+        if(place_meeting(x-horizSpeed,y,Terrain_obj) == true)
         {
             moveReverse = false;
             alarm[1] = room_speed * changeDirectionTime;
