@@ -29,6 +29,10 @@
     <sprite>sprites\Switch_DS_sprite</sprite>
     <sprite>sprites\ElectroDoor_DS_sprite</sprite>
     <sprite>sprites\ElectroPlatform_DS_sprite</sprite>
+    <sprite>sprites\Drum_Sprite</sprite>
+    <sprite>sprites\PianoRight</sprite>
+    <sprite>sprites\PianoLeft</sprite>
+    <sprite>sprites\PianoWhite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Day1</background>
@@ -62,11 +66,32 @@
     <object>objects\Switch_obj</object>
     <object>objects\ElectroDoor_obj</object>
     <object>objects\ElectroPlatform_obj</object>
+    <object>objects\Drum_PF</object>
+    <object>objects\Paino_Left</object>
+    <object>objects\Piano_Right</object>
+    <object>objects\Piano_White</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\TestRoom</room>
     <room>rooms\TestRoom2</room>
     <room>rooms\MenuRoom</room>
-    <room>rooms\TestRoom</room>
+    <room>rooms\Room1</room>
+    <room>rooms\Room2</room>
+    <room>rooms\Room3</room>
+    <room>rooms\Room4</room>
+    <room>rooms\Room5</room>
+    <room>rooms\Room6</room>
+    <room>rooms\Room7</room>
+    <room>rooms\Room8</room>
+    <room>rooms\Room9</room>
+    <room>rooms\Room10</room>
+    <room>rooms\Room11</room>
+    <room>rooms\Room12</room>
+    <room>rooms\Room13</room>
+    <room>rooms\Room14</room>
+    <room>rooms\Room15</room>
+    <room>rooms\Room16</room>
+    <room>rooms\Room17</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
