@@ -26,6 +26,9 @@
     <sprite>sprites\quit_sprite</sprite>
     <sprite>sprites\start_sprite</sprite>
     <sprite>sprites\help_sprite</sprite>
+    <sprite>sprites\Switch_DS_sprite</sprite>
+    <sprite>sprites\ElectroDoor_DS_sprite</sprite>
+    <sprite>sprites\ElectroPlatform_DS_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Day1</background>
@@ -40,22 +43,28 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\Player</object>
-    <object>objects\Ground</object>
-    <object>objects\SoundWave</object>
-    <object>objects\BreakableWall</object>
-    <object>objects\Enemy</object>
-    <object>objects\CowBell</object>
-    <object>objects\HitHat</object>
-    <object>objects\obj_Sousaphone</object>
-    <object>objects\obj_Maraca</object>
+    <object>objects\Player_obj</object>
+    <object>objects\Terrain_obj</object>
+    <object>objects\MovingTerrain_obj</object>
+    <object>objects\Enemy_obj</object>
+    <object>objects\SoundWave_obj</object>
+    <object>objects\BreakableWall_obj</object>
+    <object>objects\CowBell_obj</object>
+    <object>objects\HitHat_obj</object>
+    <object>objects\Sousaphone_obj</object>
+    <object>objects\Maraca_obj</object>
     <object>objects\title_obj</object>
     <object>objects\start_obj</object>
     <object>objects\quit_obj</object>
     <object>objects\help_obj</object>
     <object>objects\retry_obj</object>
+    <object>objects\Ground_obj</object>
+    <object>objects\Switch_obj</object>
+    <object>objects\ElectroDoor_obj</object>
+    <object>objects\ElectroPlatform_obj</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\TestRoom2</room>
     <room>rooms\MenuRoom</room>
     <room>rooms\TestRoom</room>
   </rooms>

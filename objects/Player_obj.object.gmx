@@ -31,6 +31,7 @@ moveSpeed = 7;              // How fast does the player move?
 jumpSpeed = 10;             // How high does the player jump? Also controls fall speed
 isGrounded = true;          // Is the player currently grounded?
 moveDirection = "east"      // What direction is the player facing
+isMoving = false;           // Is the player RECEIVING input to move?
 
 unlockedShooting = true;    // Did the player unlock the ability to shoot waves?
 unlockElectroWave = true;   // Did the player unlock the ability to shoot electro waves?
@@ -114,25 +115,28 @@ vspeed = jumpSpeed;
             <string>/// Player Movement
 
 // This part deals with moving left and right, while checking if they can move to that spot.
-if(keyboard_check(vk_right) &amp;&amp; place_meeting(x+moveSpeed,y,Ground) == false)
+if(keyboard_check(vk_right) &amp;&amp; place_meeting(x+moveSpeed,y,Terrain_obj) == false)
 {
     image_speed = 0.3;
     hspeed = moveSpeed;
     image_xscale = 3;
     moveDirection = "east";
+    isMoving = true;
     
 }
-else if(keyboard_check(vk_left) &amp;&amp; place_meeting(x-moveSpeed,y,Ground) == false)
+else if(keyboard_check(vk_left) &amp;&amp; place_meeting(x-moveSpeed,y,Terrain_obj) == false)
 {
     image_speed = 0.3;
     hspeed = -moveSpeed;
     image_xscale = -3;
     moveDirection = "west";
+    isMoving = true;
 }
 else
 {
     image_speed = 0.15;
     hspeed = 0;
+    isMoving = false;
 }
 
 // This part checks if there's ground collision with the player.
@@ -143,25 +147,31 @@ if(isGrounded == true)
     {
         vspeed = -jumpSpeed;
         isGrounded = false;
+        isMoving = true;
         alarm[0] = room_speed * 0.4;
     }
     // If the player doesn't have any solid ground below them, they'll fall
-    else if(place_meeting(x,y+jumpSpeed,Ground) == false)
+    else if(place_meeting(x,y+jumpSpeed,Terrain_obj) == false)
     {
         vspeed = jumpSpeed;
         isGrounded = false;
+    }
+    // If the player is on a moving platform, the player will move with it.
+    else if(place_meeting(x,y+jumpSpeed,MovingTerrain_obj) == true)
+    {
+        hspeed += MovingTerrain_obj.hspeed;
     }
 }
 else
 {
     // If the player has landed on the ground
-    if(place_meeting(x,y+jumpSpeed,Ground) == true)
+    if(place_meeting(x,y+jumpSpeed,Terrain_obj) == true)
     {
         vspeed = 0;
         isGrounded = true;
     }
     // If the player's head touched the roof
-    else if(place_meeting(x,y-jumpSpeed,Ground) == true)
+    else if(place_meeting(x,y-jumpSpeed,Terrain_obj) == true)
     {
         vspeed = jumpSpeed;
         alarm_set(0,-1);
@@ -173,7 +183,7 @@ if(isDisplayingAttack == false)
 {
     if(isGrounded == true)
     {
-        if(hspeed != 0)
+        if(isMoving == true)
         {
             // If the player is moving and attacking
             if(keyboard_check_pressed(ord("Z")))
@@ -238,9 +248,9 @@ if(unlockedShooting == true)
 { 
     var soundWave;    
     if(moveDirection == "east")
-        soundWave = instance_create(x+moveSpeed+15,y+15,SoundWave);
+        soundWave = instance_create(x+moveSpeed+15,y+15,SoundWave_obj);
     else if(moveDirection == "west")
-        soundWave = instance_create(x-moveSpeed-15,y+15,SoundWave);
+        soundWave = instance_create(x-moveSpeed-15,y+15,SoundWave_obj);
         
     soundWave.moveDirection = moveDirection;
     soundWave.waveType = soundWaveType;

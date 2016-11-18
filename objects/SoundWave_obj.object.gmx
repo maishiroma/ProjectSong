@@ -104,7 +104,7 @@ else if(moveDirection == "west")
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="Enemy">
+    <event eventtype="4" ename="Enemy_obj">
       <action>
         <libid>1</libid>
         <id>605</id>
@@ -140,7 +140,7 @@ else if(moveDirection == "west")
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="4" ename="Ground">
+    <event eventtype="4" ename="Terrain_obj">
       <action>
         <libid>1</libid>
         <id>605</id>
