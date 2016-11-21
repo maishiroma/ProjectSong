@@ -33,6 +33,10 @@
     <sprite>sprites\PianoRight</sprite>
     <sprite>sprites\PianoLeft</sprite>
     <sprite>sprites\PianoWhite</sprite>
+    <sprite>sprites\InvisibleWall_sprite</sprite>
+    <sprite>sprites\Kill_Zone_Sprite</sprite>
+    <sprite>sprites\Door_sprite</sprite>
+    <sprite>sprites\WindBlock_DS_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Day1</background>
@@ -70,10 +74,14 @@
     <object>objects\Paino_Left</object>
     <object>objects\Piano_Right</object>
     <object>objects\Piano_White</object>
+    <object>objects\InisibleWall_obj</object>
+    <object>objects\KillZone_obj</object>
+    <object>objects\Door_obj</object>
+    <object>objects\WindBlock_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\TestRoom</room>
     <room>rooms\TestRoom2</room>
+    <room>rooms\TestRoom</room>
     <room>rooms\MenuRoom</room>
     <room>rooms\Room1</room>
     <room>rooms\Room2</room>

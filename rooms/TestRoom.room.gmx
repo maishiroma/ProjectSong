@@ -51,7 +51,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="Player_obj" x="256" y="640" name="inst_47628A37" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="BreakableWall_obj" x="32" y="576" name="inst_C04306D3" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="BreakableWall_obj" x="32" y="640" name="inst_EF9FFBCB" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="CowBell_obj" x="864" y="480" name="inst_056541E0" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
