@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -33,10 +33,14 @@ isGrounded = true;          // Is the player currently grounded?
 moveDirection = "east"      // What direction is the player facing
 isMoving = false;           // Is the player RECEIVING input to move?
 
+spawnX = x;                 // The X coord that the player will respawn at if they die
+spawnY = y;                 // The Y coord that the player will respawn at if they die
+
 unlockedShooting = true;    // Did the player unlock the ability to shoot waves?
 unlockElectroWave = true;   // Did the player unlock the ability to shoot electro waves?
 unlockWindWave = true;      // Did the player unlock the ability to shoot wind waves?
 soundWaveType = 0;          // Type of Wave: 0 = rock; 1 = electro; 2 = wind
+hasDoubleJumped = false;    // Has the player already double jumped?
 
 isDisplayingAttack = false; // Is the sprite currently set in displaying attacks?
 
@@ -164,11 +168,20 @@ if(isGrounded == true)
 }
 else
 {
+    // If the player has the wind wave on, they can double jump.
+    if(soundWaveType == 2 &amp;&amp; hasDoubleJumped == false &amp;&amp; (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)))
+    {
+        vspeed = -jumpSpeed;
+        isMoving = true;
+        alarm[0] = room_speed * 0.2;
+        hasDoubleJumped = true;
+    }
     // If the player has landed on the ground
-    if(place_meeting(x,y+jumpSpeed,Terrain_obj) == true)
+    else if(place_meeting(x,y+jumpSpeed,Terrain_obj) == true)
     {
         vspeed = 0;
         isGrounded = true;
+        hasDoubleJumped = false;
     }
     // If the player's head touched the roof
     else if(place_meeting(x,y-jumpSpeed,Terrain_obj) == true)
@@ -220,6 +233,63 @@ if(isDisplayingAttack == false)
          else
             sprite_index = Player_Jump;
     }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="KillZone_obj">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// The player is sent back to the beginning of the room
+
+room_restart();
+x = spawnX;
+y = spawnY;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Enemy_obj">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// The player is sent back to the beginning of the room
+
+if(other.isStunned == false)
+{
+    room_restart();
+    x = spawnX;
+    y = spawnY;
 }
 </string>
           </argument>
