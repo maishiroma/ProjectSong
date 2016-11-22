@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>Terrain_obj</parentName>
+  <parentName>MovingTerrain_obj</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -28,6 +28,8 @@
             <string>/// Basic variables for this block
 
 isMoving = false;       // Did the sound wave hit this block?
+movingRight = false;    // Is the block moving to the right? If not, it's moving to the left.
+isGrounded = true;      // Is the block on solid ground?
 moveSpeed = 5;          // How fast will this block move?
 timeOfMovement = 0.2;   // How long will this block move?
 </string>
@@ -52,7 +54,7 @@ timeOfMovement = 0.2;   // How long will this block move?
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Once called, the block will stop moving.
+            <string>/// Once called, the block will stop moving, if it's moving horizontally.
 
 isMoving = false;
 </string>
@@ -79,20 +81,119 @@ isMoving = false;
             <kind>1</kind>
             <string>/// Movement of this block when hit by wind wave
 
+// Did the block get hit by a wind sound wave?
 if(isMoving == true)
 {
-   if(place_meeting(x+moveSpeed,y,Terrain_obj) == false)
-        hspeed = moveSpeed;
-   else if(place_meeting(x-moveSpeed,y,Terrain_obj) == false)
-        hspeed = -moveSpeed;
+   if(isGrounded == true)
+   {
+       // Did the block fall off the edge while moving?
+       if(place_meeting(x,y+moveSpeed,Terrain_obj) == false)
+       {
+            hspeed = 0;
+            vspeed = moveSpeed;
+            isGrounded = false;
+       }
+       // If the block is on a moving platform, the block will move with it.
+       if(place_meeting(x,y+moveSpeed,MovingTerrain_obj) == true)
+       {
+            var platform = instance_find(MovingTerrain_obj, instance_position(x,y+moveSpeed,MovingTerrain_obj));
+            hspeed += platform.hspeed;
+       }
+       if(movingRight == true)
+       {
+            // The block moves right as long as the time allows it to.
+            if(place_meeting(x+moveSpeed,y,Terrain_obj) == false)
+                hspeed = moveSpeed;
+            else
+                hspeed = 0;
+       }
+       else
+       {
+            // The block moves left as long as the time allows it to.
+            if(place_meeting(x-moveSpeed,y,Terrain_obj) == false)
+                hspeed = -moveSpeed;
+            else
+                hspeed = 0;
+       }
+   }
    else
-        hspeed = 0;
+   {
+        // The block keeps falling until it hits the ground.
+        if(place_meeting(x,y+moveSpeed,Terrain_obj) == true)
+        {
+            vspeed = 0;
+            isGrounded = true;
+        }
+   }
 }
 else
+{   
     hspeed = 0;
+    
+    if(isGrounded == true)
+    {
+        // Does the block not have solid ground under it?
+       if(place_meeting(x,y+moveSpeed,Terrain_obj) == false)
+       {
+            vspeed = moveSpeed;
+            isGrounded = false;
+       }
+       // If the block is on a moving platform, the block will move with it.
+       if(place_meeting(x,y+moveSpeed,MovingTerrain_obj) == true)
+       {
+            if(place_meeting(x+moveSpeed,y,Terrain_obj) == false &amp;&amp; place_meeting(x-moveSpeed,y,Terrain_obj) == false)
+                hspeed += MovingTerrain_obj.hspeed;
+       }
+    }
+    else
+    {
+        // The block keeps falling until it hits the ground.
+        if(place_meeting(x,y+moveSpeed,Terrain_obj) == true)
+        {
+            vspeed = 0;
+            isGrounded = true;
+        }
+    }
+}
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="KillZone_obj">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>The block is destroyed</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="4" ename="SoundWave_obj">
@@ -117,9 +218,9 @@ else
 if(other.waveType == 2)
 {
     if(other.hspeed &gt; 0)
-        moveSpeed = abs(moveSpeed);
+        movingRight = true;
     else
-        moveSpeed = -abs(moveSpeed);
+        movingRight = false;
     
      isMoving = true;
      alarm[0] = room_speed * timeOfMovement;
