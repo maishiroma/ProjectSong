@@ -160,10 +160,11 @@ if(isGrounded == true)
         vspeed = jumpSpeed;
         isGrounded = false;
     }
-    // If the player is on a moving platform, the player will move with it.
+    // If the player is on a moving surface, the player will move with it.
     else if(place_meeting(x,y+jumpSpeed,MovingTerrain_obj) == true)
     {
-        hspeed += MovingTerrain_obj.hspeed;
+        var platform = instance_find(MovingTerrain_obj, instance_position(x,y+jumpSpeed,MovingTerrain_obj));
+        hspeed += platform.hspeed;
     }
 }
 else
