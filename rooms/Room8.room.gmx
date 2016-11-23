@@ -50,7 +50,84 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
-  <instances/>
+  <instances>
+    <instance objName="Piano_Right" x="864" y="672" name="inst_414D62C5" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Piano_Right" x="928" y="672" name="inst_0FB253AB" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Piano_Right" x="160" y="672" name="inst_F26E777B" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Piano_Right" x="224" y="672" name="inst_04F42FFE" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Piano_White" x="320" y="672" name="inst_49CD182F" locked="0" code="" scaleX="4.57142877578735" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="992" y="416" name="inst_C4FBCA85" locked="0" code="" scaleX="2" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="992" y="352" name="inst_DF91D09D" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="992" y="288" name="inst_3D2C2C4A" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="992" y="224" name="inst_1F63D17C" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="992" y="160" name="inst_4717319E" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="288" y="736" name="inst_73A921F2" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="224" y="736" name="inst_ADC7ED73" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="160" y="736" name="inst_2BC5B6A8" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="96" y="736" name="inst_62D5A27C" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="992" y="480" name="inst_91D97866" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="352" y="736" name="inst_08AC5ABD" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="416" y="736" name="inst_C2FF166C" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="480" y="736" name="inst_E42466D4" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="544" y="736" name="inst_347F6CBE" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="0" y="0" name="inst_E0218AB9" locked="0" code="" scaleX="0" scaleY="0" colour="0" rotation="0"/>
+    <instance objName="UnbreakableWall" x="32" y="288" name="inst_7712E8A6" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="32" y="352" name="inst_114B0D73" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="32" y="416" name="inst_03F5D9F1" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="864" y="544" name="inst_DEBC4AB2" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Piano_Right" x="320" y="672" name="inst_F89CE232" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Piano_Right" x="800" y="672" name="inst_0AA2B32C" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="32" y="736" name="inst_40979985" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="32" y="224" name="inst_348C204A" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="32" y="96" name="inst_02B8C5CE" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="32" y="160" name="inst_11F48CD6" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="992" y="736" name="inst_98D91636" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="992" y="96" name="inst_CEBB224E" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="928" y="736" name="inst_AA5A26B1" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="864" y="736" name="inst_FEE7523A" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="800" y="736" name="inst_26EAA380" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="608" y="736" name="inst_BDAB4A83" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="736" y="736" name="inst_9BEBB360" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="672" y="736" name="inst_0E77FEE5" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="992" y="544" name="inst_6D6C3773" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="992" y="608" name="inst_846F6C6D" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="992" y="672" name="inst_F5280DD5" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="992" y="32" name="inst_8871AB33" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="928" y="32" name="inst_01EC0F7B" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="864" y="32" name="inst_E68653D9" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="800" y="32" name="inst_569FE247" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="736" y="32" name="inst_D328E6BC" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="672" y="32" name="inst_6AA7A611" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="608" y="32" name="inst_586D2749" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="544" y="32" name="inst_CBD0FB3C" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="480" y="32" name="inst_B0B9E3D3" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="416" y="32" name="inst_4C82A59A" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="352" y="32" name="inst_BC0A81CE" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="288" y="32" name="inst_9EEADCE3" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="224" y="32" name="inst_774981D8" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="160" y="32" name="inst_FC1C5C3A" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="96" y="32" name="inst_E88EB1E1" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="32" y="32" name="inst_46323776" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Piano_Right" x="736" y="672" name="inst_AEF447DB" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Piano_Right" x="672" y="672" name="inst_0758BEB2" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Piano_Right" x="608" y="672" name="inst_A2C19BC2" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Piano_Right" x="384" y="672" name="inst_8EE12156" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Piano_Right" x="448" y="672" name="inst_B669A22A" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Piano_White" x="544" y="672" name="inst_3B59D3C7" locked="0" code="" scaleX="4.57142877578735" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Piano_Right" x="544" y="672" name="inst_1B9322B7" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Door_obj" x="64" y="568" name="inst_4A5007E9" locked="0" code="warpTo = Room7;&#xA;newX = 832;&#xA;newY = 416;&#xA;" scaleX="3.5" scaleY="4.5" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="928" y="544" name="inst_8F99518F" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="32" y="640" name="inst_D5E54173" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="96" y="640" name="inst_8277C51F" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="96" y="416" name="inst_558682E8" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="160" y="416" name="inst_5D228C57" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="224" y="416" name="inst_F6FD13AD" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="288" y="416" name="inst_B5DFC8D4" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="352" y="416" name="inst_D16CFD48" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="416" y="416" name="inst_A6DDF7B7" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="480" y="416" name="inst_5489CBC6" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="544" y="416" name="inst_193ECFE0" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+  </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

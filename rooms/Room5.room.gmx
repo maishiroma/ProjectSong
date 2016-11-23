@@ -58,8 +58,8 @@
     <instance objName="Piano_Right" x="800" y="704" name="inst_386DD0A4" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="512" y="576" name="inst_E06C81AF" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="608" y="576" name="inst_3CC248CD" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="448" y="320" name="inst_D694FC5B" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="544" y="320" name="inst_5A744046" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="544" y="384" name="inst_D694FC5B" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="640" y="384" name="inst_5A744046" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="256" y="480" name="inst_0EAC2C5B" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="352" y="480" name="inst_D97AEA6A" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Piano_White" x="128" y="160" name="inst_84ED3923" locked="0" code="" scaleX="3" scaleY="2" colour="4294967295" rotation="0"/>
@@ -82,6 +82,39 @@
     <instance objName="Piano_Right" x="992" y="160" name="inst_7B96D307" locked="0" code="" scaleX="1.5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Piano_Right" x="1024" y="160" name="inst_B26198B0" locked="0" code="" scaleX="1.5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Piano_White" x="928" y="704" name="inst_67990C91" locked="0" code="" scaleX="3" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="416" y="800" name="inst_9E448C71" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="480" y="800" name="inst_45A38A9A" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="544" y="800" name="inst_DDC9AAD7" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="608" y="800" name="inst_B45C1148" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="672" y="800" name="inst_44322FB9" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="736" y="800" name="inst_8F4DD56E" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="352" y="800" name="inst_EBB5CF6C" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="288" y="800" name="inst_84180EF7" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="224" y="800" name="inst_7EDB98F3" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="160" y="800" name="inst_1BE6A547" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="96" y="800" name="inst_ACA85DB5" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="32" y="800" name="inst_0903B929" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="800" y="800" name="inst_83973FA7" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="-32" y="736" name="inst_77E5A519" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="-32" y="672" name="inst_BC29D57F" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="-32" y="608" name="inst_380DA931" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="-32" y="544" name="inst_B5F3A038" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="-32" y="480" name="inst_F5F762AE" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="-32" y="416" name="inst_9C44BCBF" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="-32" y="352" name="inst_ED073E4D" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="-32" y="288" name="inst_7681C2E6" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Door_obj" x="32" y="64" name="inst_4F1A551A" locked="0" code="warpTo = Room4;&#xA;newX = 672;&#xA;newY = 128;&#xA;" scaleX="4" scaleY="4.5" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1056" y="640" name="inst_EB15F85C" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1056" y="576" name="inst_28C87DE0" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1056" y="512" name="inst_92B5C339" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1056" y="448" name="inst_623961D8" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1056" y="384" name="inst_672DB802" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Door_obj" x="992" y="64" name="inst_A9CCCD14" locked="0" code="warpTo = Room6;&#xA;newX = 96;&#xA;newY = 256;&#xA;" scaleX="4" scaleY="4.5" colour="4294967295" rotation="0"/>
+    <instance objName="Drum_PF" x="320" y="192" name="inst_79DEAD00" locked="0" code="" scaleX="2" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="480" y="96" name="inst_3C5A745B" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="576" y="96" name="inst_4E143D6F" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="608" y="96" name="inst_DD58907F" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Drum_PF" x="384" y="288" name="inst_A1A5E31E" locked="0" code="" scaleX="2" scaleY="1.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

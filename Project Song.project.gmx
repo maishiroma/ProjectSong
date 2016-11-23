@@ -38,6 +38,11 @@
       <sprite>sprites\PianoLeft</sprite>
       <sprite>sprites\PianoWhite</sprite>
       <sprite>sprites\Ground_Sprite</sprite>
+      <sprite>sprites\Unbreakable</sprite>
+      <sprite>sprites\House1</sprite>
+      <sprite>sprites\house2</sprite>
+      <sprite>sprites\House3</sprite>
+      <sprite>sprites\Movable_Crate</sprite>
     </sprites>
     <sprites name="EnemySprites">
       <sprite>sprites\CowBell_Sprite</sprite>
@@ -87,6 +92,10 @@
       <object>objects\Switch_obj</object>
       <object>objects\Door_obj</object>
       <object>objects\WindBlock_obj</object>
+      <object>objects\UnbreakableWall</object>
+      <object>objects\House1_Dec</object>
+      <object>objects\House2_Dec</object>
+      <object>objects\House3_Dec</object>
     </objects>
     <objects name="MenuObjs">
       <object>objects\help_obj</object>
@@ -103,6 +112,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Room10</room>
     <room>rooms\TestRoom2</room>
     <room>rooms\TestRoom</room>
     <room>rooms\MenuRoom</room>
@@ -115,7 +125,6 @@
     <room>rooms\Room7</room>
     <room>rooms\Room8</room>
     <room>rooms\Room9</room>
-    <room>rooms\Room10</room>
     <room>rooms\Room11</room>
     <room>rooms\Room12</room>
     <room>rooms\Room13</room>
