@@ -70,7 +70,6 @@
     <instance objName="UnbreakableWall" x="416" y="736" name="inst_C2FF166C" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="UnbreakableWall" x="480" y="736" name="inst_E42466D4" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="UnbreakableWall" x="544" y="736" name="inst_347F6CBE" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="0" y="0" name="inst_E0218AB9" locked="0" code="" scaleX="0" scaleY="0" colour="0" rotation="0"/>
     <instance objName="UnbreakableWall" x="32" y="288" name="inst_7712E8A6" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="UnbreakableWall" x="32" y="352" name="inst_114B0D73" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="UnbreakableWall" x="32" y="416" name="inst_03F5D9F1" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
