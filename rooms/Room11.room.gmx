@@ -54,7 +54,6 @@
     <instance objName="Door_obj" x="64" y="640" name="inst_66B38675" locked="0" code="warpTo = Room10;&#xA;newX = 800;&#xA;newY = 640;&#xA;" scaleX="4" scaleY="4.5" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="32" y="704" name="inst_18A2AE49" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="128" y="704" name="inst_A206256F" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="224" y="704" name="inst_97B19374" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Door_obj" x="928" y="192" name="inst_7E17E05D" locked="0" code="warpTo = Room12;&#xA;newX = 160;&#xA;newY = 64;&#xA;" scaleX="4" scaleY="4.5" colour="4294967295" rotation="0"/>
     <instance objName="Piano_White" x="345" y="448" name="inst_3CFD58F1" locked="0" code="" scaleX="2.5" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="Paino_Left" x="357" y="448" name="inst_1E4E63A5" locked="0" code="" scaleX="2.5" scaleY="2.5" colour="4294967295" rotation="0"/>
@@ -67,16 +66,11 @@
     <instance objName="KillZone_obj" x="288" y="800" name="inst_94DBE968" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="KillZone_obj" x="320" y="800" name="inst_A976FA54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="896" y="256" name="inst_682A4623" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="992" y="256" name="inst_A93DBBAB" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="984" y="256" name="inst_A93DBBAB" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="704" y="608" name="inst_EB860F19" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="800" y="608" name="inst_12C0D44F" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="896" y="608" name="inst_4950880F" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="992" y="608" name="inst_DFD3C262" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="InisibleWall_obj" x="1044" y="251" name="inst_23BE152E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="InisibleWall_obj" x="1044" y="133" name="inst_C8B0923F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="InisibleWall_obj" x="1044" y="162" name="inst_FD8B184E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="InisibleWall_obj" x="1044" y="191" name="inst_6CF244A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="InisibleWall_obj" x="1044" y="221" name="inst_1FD2A0D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="KillZone_obj" x="608" y="800" name="inst_FD44F2E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="KillZone_obj" x="576" y="800" name="inst_B3B07A1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="KillZone_obj" x="640" y="800" name="inst_7AFE827A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -98,8 +92,7 @@
     <instance objName="Paino_Left" x="589" y="448" name="inst_48166B28" locked="0" code="" scaleX="2.5" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="224" y="352" name="inst_D9F1C669" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="143" y="302" name="inst_DD404426" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="672" y="608" name="inst_29D0A66B" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="960" y="544" name="inst_8E096674" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="929" y="496" name="inst_8E096674" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="KillZone_obj" x="1056" y="800" name="inst_61BD5F8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="KillZone_obj" x="1024" y="800" name="inst_09702957" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="KillZone_obj" x="1056" y="800" name="inst_676BA7C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -113,14 +106,78 @@
     <instance objName="KillZone_obj" x="-32" y="800" name="inst_8E280697" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="KillZone_obj" x="-96" y="800" name="inst_FB45D5A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="KillZone_obj" x="-128" y="800" name="inst_62143DEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="800" y="480" name="inst_878C3739" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="KillZone_obj" x="0" y="800" name="inst_F20713B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="64" y="256" name="inst_793DE44E" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="224" y="192" name="inst_B406264A" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="320" y="192" name="inst_04AD4C97" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="416" y="192" name="inst_D4D26B83" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="512" y="192" name="inst_3D132E13" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="608" y="192" name="inst_885F484A" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-18" y="729" name="inst_CAC8DC43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-18" y="697" name="inst_7B7C30AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-18" y="665" name="inst_264109AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-18" y="633" name="inst_21E90454" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-18" y="601" name="inst_E4576D10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-18" y="569" name="inst_A1EC6FC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-18" y="537" name="inst_F518550B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-18" y="505" name="inst_B07CA9FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-18" y="505" name="inst_7772BFEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-18" y="537" name="inst_6257E338" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-18" y="569" name="inst_6754C6D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-18" y="601" name="inst_2095DA0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-18" y="633" name="inst_BD4722E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-18" y="665" name="inst_03A3DA80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-18" y="697" name="inst_4733CFC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-18" y="729" name="inst_90C000B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-20" y="256" name="inst_732E2FBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-20" y="226" name="inst_A8A7FB2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-20" y="194" name="inst_03239839" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-20" y="162" name="inst_31FF5416" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-20" y="130" name="inst_70CADBA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="-20" y="98" name="inst_3085BA88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1044" y="254" name="inst_47FE1F2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1044" y="222" name="inst_ABE6FF6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1044" y="192" name="inst_E03DE286" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1044" y="161" name="inst_BDF8522D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1044" y="132" name="inst_39D47BC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1044" y="100" name="inst_58BB63F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="192" y="704" name="inst_9BA5C256" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="224" y="800" name="inst_4CD48BC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1044" y="607" name="inst_03CE7766" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1044" y="576" name="inst_D15B2D30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1044" y="544" name="inst_B428E32C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1044" y="512" name="inst_06E888AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1044" y="480" name="inst_8C9D0AF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1044" y="448" name="inst_1F70FA8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1044" y="416" name="inst_E72F9226" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UnbreakableWall" x="1044" y="384" name="inst_F4378D33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="865" y="496" name="inst_813F5989" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="32" y="800" name="inst_2183ADFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="32" y="800" name="inst_91AC8C98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="64" y="800" name="inst_A9114A3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="96" y="800" name="inst_94D4B74E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="128" y="800" name="inst_64513A88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="160" y="800" name="inst_FFFF7442" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="192" y="800" name="inst_C36C1ACF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="352" y="800" name="inst_75CB3897" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="384" y="800" name="inst_9ABB09B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="416" y="800" name="inst_7A593948" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="416" y="800" name="inst_D08EDBA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="448" y="800" name="inst_C41FC9FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="448" y="800" name="inst_345081CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="480" y="800" name="inst_F902AD32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="480" y="800" name="inst_BF07F578" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="512" y="800" name="inst_131856ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="544" y="800" name="inst_A94086CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="704" y="800" name="inst_C0108738" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="736" y="800" name="inst_DBCB1FA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="800" y="800" name="inst_4196428B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="768" y="800" name="inst_1CD2226B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="832" y="800" name="inst_BFDD5995" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="864" y="800" name="inst_385ED562" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="896" y="800" name="inst_642E4F06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="928" y="800" name="inst_BE987B38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="960" y="800" name="inst_DD5C3C09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="KillZone_obj" x="992" y="800" name="inst_1A6E85F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

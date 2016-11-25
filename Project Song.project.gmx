@@ -112,7 +112,6 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Room10</room>
     <room>rooms\TestRoom2</room>
     <room>rooms\TestRoom</room>
     <room>rooms\MenuRoom</room>
@@ -125,6 +124,7 @@
     <room>rooms\Room7</room>
     <room>rooms\Room8</room>
     <room>rooms\Room9</room>
+    <room>rooms\Room10</room>
     <room>rooms\Room11</room>
     <room>rooms\Room12</room>
     <room>rooms\Room13</room>
