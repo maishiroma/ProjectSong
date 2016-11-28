@@ -27,24 +27,25 @@
             <kind>1</kind>
             <string>/// Variables for the player
 
-moveSpeed = 7;              // How fast does the player move?
-jumpSpeed = 10;             // How high does the player jump? Also controls fall speed
+moveSpeed = 1;              // How fast does the player accelerate?
+jumpSpeed = 2;              // How high does the player jump acceletate? Also controls fall speed
+maxMoveSpeed = 7;           // What is the maximum move speed of the player?
+maxJumpSpeed = 10;          // What is the maximum jump speed of the player?
+
 isGrounded = true;          // Is the player currently grounded?
-moveDirection = "east"      // What direction is the player facing
+isJumping = false;          // Is the player currently jumping?
+hasDoubleJumped = false;    // Has the player already double jumped?
 isMoving = false;           // Is the player RECEIVING input to move?
+isDisplayingAttack = false; // Is the sprite currently set in displaying attacks?
+moveDirection = "east"      // What direction is the player facing?
 
 spawnX = x;                 // The X coord that the player will respawn at if they die
 spawnY = y;                 // The Y coord that the player will respawn at if they die
 
+soundWaveType = 0;          // Type of Wave: 0 = rock; 1 = electro; 2 = wind
 unlockedShooting = true;    // Did the player unlock the ability to shoot waves?
 unlockElectroWave = true;   // Did the player unlock the ability to shoot electro waves?
 unlockWindWave = true;      // Did the player unlock the ability to shoot wind waves?
-soundWaveType = 0;          // Type of Wave: 0 = rock; 1 = electro; 2 = wind
-hasDoubleJumped = false;    // Has the player already double jumped?
-
-isDisplayingAttack = false; // Is the sprite currently set in displaying attacks?
-
-
 </string>
           </argument>
         </arguments>
@@ -92,8 +93,7 @@ isDisplayingAttack = false;
           <argument>
             <kind>1</kind>
             <string>/// Allows the player to fall once this is activated
-
-vspeed = jumpSpeed;
+isJumping = false;
 </string>
           </argument>
         </arguments>
@@ -122,19 +122,27 @@ vspeed = jumpSpeed;
 if(keyboard_check(vk_right) &amp;&amp; place_meeting(x+moveSpeed,y,Terrain_obj) == false)
 {
     image_speed = 0.3;
-    hspeed = moveSpeed;
     image_xscale = 3;
     moveDirection = "east";
     isMoving = true;
     
+    if(hspeed &gt; maxMoveSpeed)
+        hspeed = maxMoveSpeed;
+    else
+        hspeed += moveSpeed;
+         
 }
 else if(keyboard_check(vk_left) &amp;&amp; place_meeting(x-moveSpeed,y,Terrain_obj) == false)
 {
     image_speed = 0.3;
-    hspeed = -moveSpeed;
     image_xscale = -3;
     moveDirection = "west";
     isMoving = true;
+     
+    if(hspeed &lt; -maxMoveSpeed)
+        hspeed = -maxMoveSpeed;
+    else
+         hspeed -= moveSpeed;
 }
 else
 {
@@ -146,18 +154,18 @@ else
 // This part checks if there's ground collision with the player.
 if(isGrounded == true)
 {
-    // This controls the player's jump
+    // This activates the player's jump.
     if(keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up))
     {
-        vspeed = -jumpSpeed;
+        isJumping = true;
         isGrounded = false;
         isMoving = true;
         alarm[0] = room_speed * 0.4;
-    }
+    }    
     // If the player doesn't have any solid ground below them, they'll fall
     else if(place_meeting(x,y+jumpSpeed,Terrain_obj) == false)
     {
-        vspeed = jumpSpeed;
+        isJumping = false;
         isGrounded = false;
     }
     // If the player is on a moving surface, the player will move with it.
@@ -172,23 +180,51 @@ else
     // If the player has the wind wave on, they can double jump.
     if(soundWaveType == 2 &amp;&amp; hasDoubleJumped == false &amp;&amp; (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)))
     {
-        vspeed = -jumpSpeed;
+        isJumping = true;
         isMoving = true;
         alarm[0] = room_speed * 0.2;
         hasDoubleJumped = true;
     }
-    // If the player has landed on the ground
-    else if(place_meeting(x,y+jumpSpeed,Terrain_obj) == true)
+    
+    // Controls whether the player is jumping or falling
+    if(isJumping == true)
     {
-        vspeed = 0;
-        isGrounded = true;
-        hasDoubleJumped = false;
+        // If the player's head touched the roof
+        if(place_meeting(x,y-jumpSpeed,Terrain_obj) == true)
+        {
+            isJumping = false;
+            alarm_set(0,-1);
+        }
+        else
+        {
+            // The player accelerates to max jump speed;
+            if(vspeed &lt; -maxJumpSpeed)
+                vspeed = -maxJumpSpeed;
+            else
+                vspeed -= jumpSpeed;
+        }
     }
-    // If the player's head touched the roof
-    else if(place_meeting(x,y-jumpSpeed,Terrain_obj) == true)
+    else
     {
-        vspeed = jumpSpeed;
-        alarm_set(0,-1);
+        // If the player has landed on the ground
+        if(place_meeting(x,y+jumpSpeed,Terrain_obj) == true)
+        {  
+            var yChange = y;
+            while(place_meeting(x,yChange,Terrain_obj) == true)
+                yChange -= 1;
+            y = yChange;
+            vspeed = 0;
+            isGrounded = true;
+            hasDoubleJumped = false;
+        }
+        else
+        {
+            // The player accelerates to max fall speed
+            if(vspeed &gt; maxJumpSpeed)
+                vspeed = maxJumpSpeed;
+            else
+                vspeed += jumpSpeed;
+        }
     }
 }
 
