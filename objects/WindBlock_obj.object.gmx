@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>MovingTerrain_obj</parentName>
+  <parentName>Terrain_obj</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>/// Basic variables for this block
+
+hsp = 0;                // Horizontal speed of block
+vsp = 0;                // Vertical speed of block
 
 isMoving = false;       // Did the sound wave hit this block?
 movingRight = false;    // Is the block moving to the right? If not, it's moving to the left.
@@ -79,82 +82,59 @@ isMoving = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Movement of this block when hit by wind wave
+            <string>/// Box Movement
 
-// Did the block get hit by a wind sound wave?
+// Horizontal movement
 if(isMoving == true)
 {
-   if(isGrounded == true)
-   {
-       // Did the block fall off the edge while moving?
-       if(place_meeting(x,y+moveSpeed,Terrain_obj) == false)
-       {
-            hspeed = 0;
-            vspeed = moveSpeed;
-            isGrounded = false;
-       }
-       // If the block is on a moving platform, the block will move with it.
-       if(place_meeting(x,y+moveSpeed,MovingTerrain_obj) == true)
-       {
-            var platform = instance_find(MovingTerrain_obj, instance_position(x,y+moveSpeed,MovingTerrain_obj));
-            hspeed += platform.hspeed;
-       }
-       if(movingRight == true)
-       {
-            // The block moves right as long as the time allows it to.
-            if(place_meeting(x+moveSpeed,y,Terrain_obj) == false)
-                hspeed = moveSpeed;
-            else
-                hspeed = 0;
-       }
-       else
-       {
-            // The block moves left as long as the time allows it to.
-            if(place_meeting(x-moveSpeed,y,Terrain_obj) == false)
-                hspeed = -moveSpeed;
-            else
-                hspeed = 0;
-       }
-   }
-   else
-   {
-        // The block keeps falling until it hits the ground.
-        if(place_meeting(x,y+moveSpeed,Terrain_obj) == true)
-        {
-            vspeed = 0;
-            isGrounded = true;
-        }
-   }
+    if(movingRight == true)
+        hsp += moveSpeed;
+    else
+        hsp -= moveSpeed;
 }
 else
-{   
-    hspeed = 0;
-    
-    if(isGrounded == true)
-    {
-        // Does the block not have solid ground under it?
-       if(place_meeting(x,y+moveSpeed,Terrain_obj) == false)
-       {
-            vspeed = moveSpeed;
-            isGrounded = false;
-       }
-       // If the block is on a moving platform, the block will move with it.
-       if(place_meeting(x,y+moveSpeed,MovingTerrain_obj) == true)
-       {
-            if(place_meeting(x+moveSpeed,y,Terrain_obj) == false &amp;&amp; place_meeting(x-moveSpeed,y,Terrain_obj) == false)
-                hspeed += MovingTerrain_obj.hspeed;
-       }
-    }
-    else
-    {
-        // The block keeps falling until it hits the ground.
-        if(place_meeting(x,y+moveSpeed,Terrain_obj) == true)
-        {
-            vspeed = 0;
-            isGrounded = true;
-        }
-    }
+{
+    hsp = 0;
+    if(place_meeting(x,y+moveSpeed, Terrain_obj) == false)
+        isGrounded = false;
 }
+
+// Vertical movement 
+if(isGrounded == true)
+    vsp = 0;
+else
+    vsp += moveSpeed;
+
+// If the box is on a moving surface, the box will move with it.
+if(place_meeting(x,y+moveSpeed,MovingTerrain_obj) == true)
+{
+    var platform = instance_find(MovingTerrain_obj, instance_position(x,y+moveSpeed,MovingTerrain_obj));
+    
+    hsp += platform.hspeed;
+}
+    
+// Horizontal collision
+if(place_meeting(x+hsp,y,Terrain_obj) == true)
+{
+    while(!place_meeting(x+sign(hsp),y, Terrain_obj))
+        x += sign(hsp);
+    hsp = 0;
+}
+x += hsp;
+
+// Vertical collision
+if(place_meeting(x,y+vsp,Terrain_obj) == true)
+{
+    while(!place_meeting(x,y+sign(vsp),Terrain_obj))
+        y += sign(vsp);
+    
+    // Is the box on the ground?
+    if(sign(vsp) &gt; 0)
+        isGrounded = true;
+            
+    vsp = 0;
+}
+y += vsp;
 </string>
           </argument>
         </arguments>
