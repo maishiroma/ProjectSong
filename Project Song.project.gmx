@@ -57,6 +57,12 @@
       <sprite>sprites\start_sprite</sprite>
       <sprite>sprites\help_sprite</sprite>
     </sprites>
+    <sprite>sprites\GameOver_spr</sprite>
+    <sprite>sprites\Home_spr</sprite>
+    <sprite>sprites\instru1</sprite>
+    <sprite>sprites\instru2</sprite>
+    <sprite>sprites\instru3</sprite>
+    <sprite>sprites\instru4</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Day1</background>
@@ -103,6 +109,8 @@
       <object>objects\title_obj</object>
       <object>objects\start_obj</object>
       <object>objects\quit_obj</object>
+      <object>objects\instru3obj</object>
+      <object>objects\instru4obj</object>
     </objects>
     <objects name="EnemyObjs">
       <object>objects\HitHat_obj</object>
@@ -110,6 +118,10 @@
       <object>objects\Sousaphone_obj</object>
       <object>objects\Maraca_obj</object>
     </objects>
+    <object>objects\GameOver</object>
+    <object>objects\Home_button</object>
+    <object>objects\instru1_obj</object>
+    <object>objects\instru2obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TestRoom2</room>
@@ -132,6 +144,8 @@
     <room>rooms\Room16</room>
     <room>rooms\Room17</room>
     <room>rooms\TestRoom</room>
+    <room>rooms\GameOverRoom</room>
+    <room>rooms\HelpRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
