@@ -57,12 +57,17 @@
       <sprite>sprites\start_sprite</sprite>
       <sprite>sprites\help_sprite</sprite>
     </sprites>
+<<<<<<< HEAD
     <sprite>sprites\GameOver_spr</sprite>
     <sprite>sprites\Home_spr</sprite>
     <sprite>sprites\instru1</sprite>
     <sprite>sprites\instru2</sprite>
     <sprite>sprites\instru3</sprite>
     <sprite>sprites\instru4</sprite>
+=======
+    <sprite>sprites\guitar_idle</sprite>
+    <sprite>sprites\flute</sprite>
+>>>>>>> 44ac51648be36835e45f4cd73ed61ffdbfe4bec5
   </sprites>
   <backgrounds name="background">
     <background>background\Day1</background>
@@ -118,10 +123,15 @@
       <object>objects\Sousaphone_obj</object>
       <object>objects\Maraca_obj</object>
     </objects>
+<<<<<<< HEAD
     <object>objects\GameOver</object>
     <object>objects\Home_button</object>
     <object>objects\instru1_obj</object>
     <object>objects\instru2obj</object>
+=======
+    <object>objects\guitar</object>
+    <object>objects\flute_key</object>
+>>>>>>> 44ac51648be36835e45f4cd73ed61ffdbfe4bec5
   </objects>
   <rooms name="rooms">
     <room>rooms\TestRoom2</room>
