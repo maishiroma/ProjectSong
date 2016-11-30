@@ -167,19 +167,24 @@ else
         vsp += fallSpeed;
 }
 
+// If the player is on a moving surface, the player will move with it.
+if(place_meeting(x,y+jumpSpeed,MovingTerrain_obj) == true)
+{
+    var platform = instance_find(MovingTerrain_obj, instance_position(x,y+jumpSpeed,MovingTerrain_obj));
+    hsp += platform.hspeed;
+}
+if(place_meeting(x,y+jumpSpeed,WindBlock_obj) == true)
+{
+    var block = instance_find(WindBlock_obj, instance_position(x,y+jumpSpeed,WindBlock_obj));
+    hsp += block.hsp;
+}
+
 // Horizontal collision
 if(place_meeting(x+hsp,y,Terrain_obj) == true)
 {
     while(!place_meeting(x+sign(hsp),y, Terrain_obj))
         x += sign(hsp);
     hsp = 0;
-}
-
-// If the player is on a moving surface, the player will move with it.
-if(place_meeting(x,y+jumpSpeed,MovingTerrain_obj) == true)
-{
-    var platform = instance_find(MovingTerrain_obj, instance_position(x,y+jumpSpeed,MovingTerrain_obj));
-    hsp += platform.hspeed;
 }
 x += hsp;
 

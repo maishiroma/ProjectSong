@@ -91,6 +91,9 @@ if(isMoving == true)
         hsp += moveSpeed;
     else
         hsp -= moveSpeed;
+        
+    if(place_meeting(x,y+moveSpeed,Terrain_obj) == false)
+        isMoving = false; 
 }
 else
 {
@@ -109,10 +112,14 @@ else
 if(place_meeting(x,y+moveSpeed,MovingTerrain_obj) == true)
 {
     var platform = instance_find(MovingTerrain_obj, instance_position(x,y+moveSpeed,MovingTerrain_obj));
-    
     hsp += platform.hspeed;
 }
-    
+if(place_meeting(x,y+moveSpeed,WindBlock_obj) == true)
+{
+    var block = instance_find(WindBlock_obj, instance_position(x,y+moveSpeed,WindBlock_obj));
+    hsp += block.hsp;
+}
+
 // Horizontal collision
 if(place_meeting(x+hsp,y,Terrain_obj) == true)
 {
