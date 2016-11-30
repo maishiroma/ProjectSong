@@ -4,7 +4,23 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\A</sound>
+    <sound>sound\ASharp</sound>
+    <sound>sound\B</sound>
+    <sound>sound\Background</sound>
+    <sound>sound\C</sound>
+    <sound>sound\CSharp</sound>
+    <sound>sound\D</sound>
+    <sound>sound\DSharp</sound>
+    <sound>sound\E</sound>
+    <sound>sound\F</sound>
+    <sound>sound\FSharp</sound>
+    <sound>sound\G</sound>
+    <sound>sound\GSharp</sound>
+    <sound>sound\TitleScreen</sound>
+    <sound>sound\WinScreen</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="DummySprites">
       <sprite>sprites\BreakableWall_DSprite</sprite>
@@ -110,9 +126,13 @@
       <object>objects\Sousaphone_obj</object>
       <object>objects\Maraca_obj</object>
     </objects>
+    <objects name="MusicObjs">
+      <object>objects\Title_Music</object>
+      <object>objects\Level_Music</object>
+      <object>objects\End_Music</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\TestRoom2</room>
     <room>rooms\MenuRoom</room>
     <room>rooms\Room1</room>
     <room>rooms\Room2</room>
@@ -131,6 +151,7 @@
     <room>rooms\Room15</room>
     <room>rooms\Room16</room>
     <room>rooms\Room17</room>
+    <room>rooms\TestRoom2</room>
     <room>rooms\TestRoom</room>
   </rooms>
   <help>

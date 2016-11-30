@@ -55,6 +55,7 @@
     <instance objName="start_obj" x="224" y="544" name="inst_7E0D2D3A" locked="0" code="" scaleX="0.686046540737152" scaleY="0.682080924510956" colour="4294967295" rotation="0"/>
     <instance objName="help_obj" x="512" y="544" name="inst_5B879040" locked="0" code="" scaleX="0.865384638309479" scaleY="0.672413766384125" colour="4294967295" rotation="0"/>
     <instance objName="quit_obj" x="832" y="544" name="inst_08027C36" locked="0" code="" scaleX="1.00793647766113" scaleY="0.685714304447174" colour="4294967295" rotation="0"/>
+    <instance objName="Title_Music" x="0" y="0" name="inst_23050294" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
