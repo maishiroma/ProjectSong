@@ -57,6 +57,8 @@
       <sprite>sprites\start_sprite</sprite>
       <sprite>sprites\help_sprite</sprite>
     </sprites>
+    <sprite>sprites\guitar_idle</sprite>
+    <sprite>sprites\flute</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Day1</background>
@@ -110,6 +112,8 @@
       <object>objects\Sousaphone_obj</object>
       <object>objects\Maraca_obj</object>
     </objects>
+    <object>objects\guitar</object>
+    <object>objects\flute_key</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TestRoom2</room>
