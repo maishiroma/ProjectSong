@@ -116,7 +116,7 @@
     <object>objects\flute_key</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\TestRoom2</room>
+    <room>rooms\Room17</room>
     <room>rooms\MenuRoom</room>
     <room>rooms\Room1</room>
     <room>rooms\Room2</room>
@@ -134,8 +134,8 @@
     <room>rooms\Room14</room>
     <room>rooms\Room15</room>
     <room>rooms\Room16</room>
-    <room>rooms\Room17</room>
     <room>rooms\TestRoom</room>
+    <room>rooms\TestRoom2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

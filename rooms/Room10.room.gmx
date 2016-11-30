@@ -92,7 +92,6 @@
     <instance objName="UnbreakableWall" x="1056" y="64" name="inst_5CEF010B" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="UnbreakableWall" x="1056" y="0" name="inst_90ED195A" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Door_obj" x="992" y="672" name="inst_02B2CD6E" locked="0" code="warpTo = Room7;&#xA;newX = 192;&#xA;newY = 256;&#xA;" scaleX="3.5" scaleY="4.5" colour="4294967295" rotation="0"/>
-    <instance objName="Player_obj" x="512" y="224" name="inst_C366E9CE" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="32" y="736" name="inst_8A1E461B" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="128" y="736" name="inst_086EA02E" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ground_obj" x="224" y="736" name="inst_B8463AFB" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
