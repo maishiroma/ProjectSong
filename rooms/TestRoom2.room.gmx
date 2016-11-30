@@ -6,7 +6,7 @@
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
-  <speed>60</speed>
+  <speed>30</speed>
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
@@ -51,37 +51,29 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="Player_obj" x="96" y="640" name="inst_594F846A" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="800" y="672" name="inst_87513B23" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="896" y="672" name="inst_3C511E4E" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="704" y="672" name="inst_9A7902B4" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="992" y="672" name="inst_A72FFE12" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="128" y="672" name="inst_093C1807" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="32" y="672" name="inst_E82B73A0" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="224" y="672" name="inst_DCDF2572" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="608" y="672" name="inst_A27D3B90" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="224" y="256" name="inst_5D342339" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="864" y="320" name="inst_A8418604" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="128" y="256" name="inst_205F5F91" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="768" y="320" name="inst_5CA3D04B" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Switch_obj" x="128" y="224" name="inst_3A21AFD4" locked="0" code="/// Here, you can toggle if hasTimer is true or false&#xA;&#xA;hasTimer = false;&#xA;" scaleX="2" scaleY="2.20000004768372" colour="4294967295" rotation="0"/>
-    <instance objName="ElectroDoor_obj" x="992" y="640" name="inst_55EEF3D4" locked="0" code="// Make sure you specify the switch that corresponds to this door here!&#xA;switchID = inst_3A21AFD4;&#xA;inverseDoor = false;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="ElectroPlatform_obj" x="320" y="352" name="inst_1804A45B" locked="0" code="// Make sure you specify the switch that corresponds to this platform here!&#xA;switchID = inst_3A21AFD4;&#xA;inversePlatform = false;&#xA;moveHorizontal = true;&#xA;" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="InisibleWall_obj" x="-32" y="640" name="inst_B35B7091" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="InisibleWall_obj" x="-32" y="576" name="inst_5C6C2EF5" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="InisibleWall_obj" x="-32" y="512" name="inst_81F68B26" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="InisibleWall_obj" x="-32" y="640" name="inst_024C1F0F" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Door_obj" x="832" y="256" name="inst_5C8C0852" locked="0" code="// ALL DOORS SHOULD HAVE THE FOLLOWING VARIABLES INITIALIZED HERE&#xA;&#xA;warpTo = TestRoom;&#xA;newX = 96;&#xA;newY = 608;" scaleX="4" scaleY="4.5" colour="4294967295" rotation="0"/>
-    <instance objName="KillZone_obj" x="416" y="800" name="inst_435FF621" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="KillZone_obj" x="480" y="800" name="inst_0C4E67B1" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="KillZone_obj" x="352" y="800" name="inst_B4A6F8AC" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="KillZone_obj" x="544" y="800" name="inst_A21B802E" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="512" y="672" name="inst_520D7E5E" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="WindBlock_obj" x="224" y="512" name="inst_FB9CB723" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="192" y="544" name="inst_695AF619" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="BreakableWall_obj" x="832" y="608" name="inst_2482341B" locked="0" code="" scaleX="6.69999980926514" scaleY="6" colour="4294967295" rotation="90"/>
-    <instance objName="WindBlock_obj" x="320" y="320" name="inst_C7E86207" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_obj" x="512" y="288" name="inst_64089F0E" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="320" y="736" name="inst_CFF5D715" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="416" y="736" name="inst_DF9A87E2" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="512" y="736" name="inst_3B6C8391" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="32" y="736" name="inst_A592F175" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="128" y="736" name="inst_E09715D1" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="224" y="736" name="inst_BCD6FF95" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="608" y="736" name="inst_330B6DD8" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="704" y="736" name="inst_EFE7C0B3" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="800" y="736" name="inst_54D52C51" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="896" y="736" name="inst_4AA5727C" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="992" y="736" name="inst_F2F6C690" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="InisibleWall_obj" x="-64" y="384" name="inst_EBC6C54A" locked="0" code="" scaleX="2.5806450843811" scaleY="24.2580642700195" colour="4294967295" rotation="0"/>
+    <instance objName="InisibleWall_obj" x="1088" y="384" name="inst_357A8943" locked="0" code="" scaleX="2.5806450843811" scaleY="24.2580642700195" colour="4294967295" rotation="0"/>
+    <instance objName="InisibleWall_obj" x="512" y="-64" name="inst_4395219C" locked="0" code="" scaleX="32.9375" scaleY="3.42000007629395" colour="4294967295" rotation="0"/>
+    <instance objName="Player_obj" x="96" y="672" name="inst_F2BF27B3" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="288" y="512" name="inst_6EE7851A" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="384" y="512" name="inst_47B8F9A1" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="224" y="608" name="inst_34E4EF03" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ground_obj" x="480" y="512" name="inst_BCF239A3" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Switch_obj" x="288" y="480" name="inst_94036A0B" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="ElectroPlatform_obj" x="448" y="416" name="inst_2AD8CBE1" locked="0" code="switchID = inst_94036A0B;&#xA;" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="WindBlock_obj" x="480" y="352" name="inst_A4B1C3DE" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="WindBlock_obj" x="544" y="672" name="inst_B28F499C" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
